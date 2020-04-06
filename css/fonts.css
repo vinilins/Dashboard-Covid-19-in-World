@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../fonts/RobotoMono-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../fonts/RobotoMono-Bold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../fonts/RobotoMono-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url('../fonts/Gilroy-SemiBold.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Skarpa Bold 2.0';
+    src: url('../fonts/SkarpaBold2.0.otf');
+    font-weight: normal;
+}

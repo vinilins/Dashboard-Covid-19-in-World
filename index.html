@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebarTop">
+            <i class="fas fa-virus"></i>
+            DASHBOARD 
+            <button class="btnx" onclick="hideMenu()"><i class="fas fa-times" id="x"></i></button>
+        </div>
+        <div class="sidebarMenu">
+            <ul class="list">
+
+                <li> <i class="fas fa-angle-right"></i> Select Country:</li>
+                    <div class="input-group mb-3" id="selectCountry">
+                        <select class="custom-select" id="sCountry" size="1">
+                            <option value="All" selected>All</option>  
+                        </select>
+                    </div>
+
+                <li> <i class="fas fa-angle-right"></i> Select Month:</li>
+                    <div class="input-group mb-3" id="selectMes">
+                        <select class="custom-select" id="sMes" onchange="loadMonths()">
+                            <option value="All" selected>All</option> 
+                            <option value="1">January</option> 
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+
+                <li> <i class="fas fa-angle-right"></i> Select Day:</li>
+                    <div class="input-group mb-3" id="selectRadio">
+                        <select class="custom-select" id="sRadio">
+                            <option value="All" selected>All</option>
+                        </select>
+                    </div>
+            </ul>
+
+            <button type="button" onClick="clickButtonSearch()" id="btn-pesquisar" class="btn btn-dark">Search</button> 
+        </div>
+        <div class="credits">
+            @ 2020 developed by Vinícius Lins
+        </div>
+    </div>
+
+    <div class="view" id="view">
+        <div class="viewTop">
+            <div class="menu">
+                <button class="btnMenu" onclick="showMenu()"><i class="fas fa-bars"></i></button>
+            </div> 
+            <div class="textTop">
+                Cases number of COVID-19 in the world
+            </div>
+        </div>
+        <div class="viewContent">
+            <div class="textTitle">
+               COVID-19
+            </div>
+            <div class="textCountry">
+                <label class="textCnt" id="textCnt"></label>
+            </div>
+            <div class="textNumber">
+                <label class="textL">Infecteds</label>
+                <label class="textLB" id="cases"></label>
+             </div>
+             <div class="textNumber">
+                <label class="textL">Deaths</label>
+                <label class="textLB" id="deaths"></label>
+             </div>
+        </div>
+    </div>
+</body>
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="plugins/fontawesome/js/all.min.js"></script>
+</html>
